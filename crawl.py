@@ -1,3 +1,6 @@
+"""Crawl tất cả các bài viết có label
+Python(http://www.familug.org/search/label/Python), Command, sysadmin và 10 bài
+viết mới nhất ở homepage của http://www.familug.org/"""
 import requests
 from bs4 import BeautifulSoup
 import json
