@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<style>
+		table,
+		th {
+  			background-color: black;
+  			color: white;
+		}
+		td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			vertical-align: top
+		}
+		tr:nth-child(even) {
+  			background-color: #eee;
+		}
+		tr:nth-child(odd) {
+ 			background-color: #fff;
+		}
+		h1{
+			text-align: center;
+			font-style: xx-large;
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+		<br>
+		<h1 style="color:Tomato;">Cái bài viết mới tại FAMILUG</h1>
+    <br><br>
+
+		<table class="u-full-width">
+			<thead>
+				<tr>
+					<th>Python</th>
+					<th>Command</th>
+					<th>sysadmin</th>
+					<th>Latest</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						{% for title, link in python %}
+						<p><a href={{link}}>{{title}}</a></p>
+						<br>
+						{% endfor %}
+					</td>
+					<td>
+						{% for title, link in command %}
+						<p><a href={{link}}>{{title}}</a></p>
+						<br>
+						{% endfor %}
+					</td>
+					<td>
+						{% for title, link in sysadmin %}
+						<p><a href={{link}}>{{title}}</a></p>
+						<br>
+						{% endfor %}
+					</td>
+					<td>
+						{% for title, link in latest %}
+						<p><a href={{link}}>{{title}}</a></p>
+						<br>
+						{% endfor %}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+  </section>
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <br><br>
+      <p>Nguồn: <a href="https://www.familug.org/">FAMILUG</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>
